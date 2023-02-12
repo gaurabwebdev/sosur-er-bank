@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Dashboard</title>
+    <!-- Tailwind CDN Link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-zinc-300">
+    <!-- Header Area Starts -->
+        <header>
+            <h1 class="text-5xl font-semibold text-center m-12">Your Account 
+                <span class="text-blue-700 font-bold">Dashboard</span>
+            </h1>
+        </header>
+    <!-- Header Area Ends -->
+    
+    <!-- Main Area Starts -->
+
+        <main>
+            <section>
+                <div class="bg-gray-700 w-full max-w-6xl  mx-auto">
+                    <div class=" p-5 rounded grid grid-cols sm:grid-cols-3 gap-4 text-3xl">
+                        <div class="flex flex-col justify-center h-32 p-2 bg-red-400 rounded">
+                            <div class="font-semibold">
+                                Total Deposit
+                            </div>
+                            <div class="font-medium">
+                                <span>
+                                                                                $
+                                </span>
+                                <span id="totalDp">
+                                                                                00
+                                </span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col justify-center h-32 p-2 bg-orange-400 rounded">
+                            <div class="font-semibold">
+                                Total Withdraw
+                            </div>
+                            <div class="font-medium">
+                                <span>
+                                $
+                                </span>
+                                <span id="totalWD">
+                                                                    00
+                                </span>
+                            </div>
+                        </div>
+                        <div class="flex flex-col justify-center h-32 p-2 bg-teal-400 rounded">
+                            <div class="font-semibold">
+                                Total Balance
+                            </div>
+                            <div class="font-medium">
+                                <span>
+                                                                    $
+                                </span>
+                                <span id="totalBL">
+                                                                    250
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="p-5 rounded flex flex-col items-center md:flex-row pt-0 gap-4">
+                        <div class="bg-blue-400 h-48 p-2 rounded w-full md:w-1/2 text-center flex flex-col justify-center">
+                            <h3 class="font-semibold text-3xl">Deposit Your Money</h3>
+
+                            <div class="flex flex-col items-center gap-4 mt-3">
+                                <input class="p-2 w-2/3 rounded-sm" type="number" name="deposit" id="deposit-amount" placeholder="$ deposit amount" min="5">
+
+                                <button class="bg-amber-400 hover:bg-amber-500 px-5 py-2 rounded-sm font-medium" id = "deposit-btn">
+                                Deposit
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="bg-indigo-400 h-48 p-2 rounded w-full md:w-1/2 text-center flex flex-col justify-center">
+                            <h3 class="font-semibold text-3xl">Withdraw Your Money</h3>
+
+                            <div class="flex flex-col items-center gap-4 mt-3">
+                                <input class="p-2 w-2/3 rounded-sm" type="number" name="withdraw" id="withdraw-amount" placeholder="$ withdraw amount" min="0">
+
+                                <button class="bg-amber-400 hover:bg-amber-500 px-5 py-2 rounded-sm font-medium" id = "withdraw-btn">
+                                Withdraw
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    <!-- Main Area Ends -->
+    
+    <script src="js/dashboard.js"></script>
+</body>
+</html>
