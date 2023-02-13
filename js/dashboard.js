@@ -2,7 +2,7 @@ document.getElementById('deposit-btn').addEventListener('click', function(){
     
     const depositInput = document.getElementById('deposit-amount');
     let depositAmount = parseFloat(depositInput.value);
-
+    
     
     let totalDep = document.getElementById('totalDp');
     let totalBal = document.getElementById('totalBL');
